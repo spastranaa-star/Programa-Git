@@ -1,0 +1,9 @@
+# Archivos compilados de Java
+backend/bin/
+
+# Bases de datos locales
+*.mv.db
+*.trace.db
+
+# Librerías descargadas localmente
+backend/lib/*.jar
