@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>COMFEY</title>
+    <title>COMFEY - Asistente Médico Virtual</title>
 
     <link rel="stylesheet" href="styles.css">
 
@@ -17,33 +17,49 @@
 
 <div class="contenedor">
 
-    <img src="logo.png" class="logo">
+    <img src="logo.png" class="logo" alt="Logo de COMFEY">
 
     <h1>COMFEY</h1>
 
     <h2>Bienvenido</h2>
 
-    <input type="email" placeholder="Correo electrónico">
+    <form id="formLogin">
 
-    <input type="password" placeholder="Contraseña">
+        <input
+            type="email"
+            id="correo"
+            placeholder="Correo electrónico"
+            required
+        >
 
-    <select>
+        <input
+            type="password"
+            id="contrasena"
+            placeholder="Contraseña"
+            required
+        >
 
-        <option>Tipo de usuario</option>
+        <select id="tipoUsuario" required>
 
-        <option>Paciente</option>
+            <option value="">Tipo de usuario</option>
 
-        <option>Médico</option>
+            <option value="Paciente">Paciente</option>
 
-        <option>Administrador</option>
+            <option value="Medico">Médico</option>
 
-    </select>
+            <option value="Administrador">Administrador</option>
 
-    <button onclick="mensaje()">
+        </select>
 
-        Iniciar sesión
+        <button type="submit">
 
-    </button>
+            Iniciar sesión
+
+        </button>
+
+    </form>
+
+    <p id="mensaje" class="texto"></p>
 
     <p class="texto">
 
